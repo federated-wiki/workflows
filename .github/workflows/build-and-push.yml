@@ -97,8 +97,6 @@ jobs:
 #          name=docker.io/${{ vars.DH_ORGANIZATION }}/${{ inputs.image-name }},enable=${{ inputs.docker }}
         labels: |
           org.opencontainers.image.title=${{ inputs.image-name }}
-          org.opencontainers.image.url=https://github.com/federated-wiki/wiki-docker
-          org.opencontainers.image.source=https://github.com/federated-wiki/wiki-docker/blob/main/Dockerfile
           org.opencontainers.image.vendor=Federated Wiki Community Initiative
           org.opencontainers.image.description A federated wiki version packaged in a Node.js LTS container, running unprivileged.
           org.opencontainers.image.licenses=MIT
