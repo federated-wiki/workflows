@@ -25,9 +25,10 @@ on:
         required: false
         type: string
       context:
-        description: "Optional build context, defaults to ./ in the checkout root"
+        description: "Optional build context, defaults to the ref that triggered the run, and not ./ in the checkout root"
         required: false
         type: string
+        default: .
       file:
         description: "Optional path to a Dockerfile to build, relative to the build context"
         required: false
