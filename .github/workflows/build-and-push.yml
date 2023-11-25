@@ -135,6 +135,7 @@ jobs:
       id: build-push
       with:
         push: true
+        provenance: false
         context:    "${{ inputs.context }}"
         platforms:  linux/amd64,linux/arm64
         file:       "${{ inputs.file }}"
